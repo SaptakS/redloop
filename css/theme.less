@@ -17,6 +17,16 @@ body {
 	font-family: @font-family-base;
 }
 
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url('../img/imageedit_26_7399691928.gif') 50% 50% no-repeat rgb(220,220,220);
+}
+
 .no-padding {
   padding: 0 !important;
 }
@@ -142,7 +152,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: @headings-font-family;
-  font-weight: 500;
+  font-weight: bold;
   line-height: 1.1;
   color: inherit;
 }
@@ -377,7 +387,7 @@ blockquote {
   padding: 1em 0;
 
   .navbar-nav .current > a {
-    color: white !important;
+    color: #E73C3C !important;
   }
   .nav {
     > li {
@@ -542,9 +552,9 @@ blockquote {
 .cbp-af-header .nav a {
 	color: white;
   font-family: @headings-font-family;
-	font-weight: 300;
-	margin: 0 0 0 20px;
-	font-size: 1em;
+	font-weight: bold;
+	margin: 0 0 0 10px;
+	font-size: 1.5em;
 	text-transform: uppercase;
   
   &.signup {
@@ -568,7 +578,8 @@ blockquote {
 .cbp-af-header.cbp-af-header-shrink {
 	height: 70px;
     background-color: @theme-cta;
-    border-bottom: 1px solid @theme-cta;
+    border-bottom: 1px solid @theme-primary;
+    box-shadow: 1px 1px 10px black;
 
   .dropdown-menu {
     position: absolute;
@@ -579,7 +590,7 @@ blockquote {
 .cbp-af-header.cbp-af-header-shrink h1,
 .cbp-af-header.cbp-af-header-shrink .nav a {
 	line-height: 40px;
-  color: black;
+  color: white;
 }
 
 .cbp-af-header.cbp-af-header-shrink .nav a {
@@ -1352,20 +1363,20 @@ section .login-overlay{
     text-shadow: 1px 1px 3px #333;
 
     h1 {
-      font-size: 3em;
+      font-size: 4.5em;
       font-weight: 800;
       margin: 0 0 0.5em;
     }
 
     h2 {
-      font-size: 1.8em;
-      font-weight: 300;
+      font-size: 2.5em;
+      font-weight: bold;
       color: rgba(255,255,255,0.9);
     }
 
     p {
       font-size: 1.3em;
-      font-weight: 400;
+      font-weight: bold;
       line-height: 1.8;
       color: rgba(255,255,255,0.9);
       margin: 1em 10em;
@@ -1664,6 +1675,19 @@ section .login-overlay{
 //
 // Sections
 // --------------------------------------------------
+section#featured3.light.with-bg {
+  background: url('../img/bg-content2.jpg') center center no-repeat;
+  background-size: cover;
+}
+section#featured3.dark {
+  background-color: black;
+  background: url('../img/rk4qwG.jpg');
+
+}
+section#featured3.dark.with-bg {
+  background: url('../img/bg-content2.jpg') center center no-repeat;
+  background-size: cover;
+}
 
 section {
   padding: 4em 0;
@@ -2360,7 +2384,7 @@ section {
 // --------------------------------------------------
 
 footer.footer {
-  background: @theme-cta;
+  background: @theme-primary;
   padding: 5em 0;
   color: white;
 
@@ -2480,6 +2504,10 @@ footer.footer {
   p {
     margin: 0 2em 2em;
   }
+}
+.icon-wrapper:hover {
+  background-color: rgb(231, 60, 60);
+  transition: 0.5s ease-in-out;
 }
 
 
